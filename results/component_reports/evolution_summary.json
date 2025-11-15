@@ -1,0 +1,30 @@
+{
+  "id": "evolution",
+  "label": "Evolutionary Discovery",
+  "metrics": {
+    "experiments": {
+      "total_experiments": 22,
+      "successful_experiments": 0,
+      "failed_experiments": 22,
+      "total_discoveries": 0,
+      "discoveries_by_segment": {},
+      "performance_metrics": {},
+      "segment_analysis": {}
+    },
+    "segments": 5,
+    "avg_pareto": {
+      "avg_glow": 0.7742263948208141,
+      "avg_color_hue": 178.76128639909123,
+      "avg_particle_density": 0.2875566958618842
+    }
+  },
+  "documents": [
+    "mega_scale_report_20250526_013218.md",
+    "segmented_evolution_results.json",
+    "comprehensive_research_paper.py"
+  ],
+  "facts": [
+    "Evolution experiments executed: 22 (successes: 0).",
+    "Segments analyzed: 5, mean glow 0.774."
+  ]
+}

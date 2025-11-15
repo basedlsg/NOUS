@@ -1,0 +1,43 @@
+{
+  "id": "ai_society",
+  "label": "AI Society",
+  "metrics": {
+    "observations": 81249,
+    "anomalies": 2,
+    "timespan": {
+      "start": "2025-06-23T23:49:46.434701",
+      "end": "2025-06-25T19:26:14.490001",
+      "duration_hours": 43.607793138888894
+    },
+    "happiness": {
+      "mean": 0.42721122939991607,
+      "min": 0.33339190263992335,
+      "max": 0.5583231297096415,
+      "latest": 0.33339190263992335
+    },
+    "energy": {
+      "mean": 0.5387803483817807,
+      "min": 0.38214738503559886,
+      "max": 0.7489508022243291,
+      "latest": 0.38214738503559886
+    },
+    "wealth": {
+      "mean": 1396951.1474441744,
+      "min": 1362669.052595531,
+      "max": 1398954.72983492,
+      "latest": 1362669.052595531
+    },
+    "avg_agents": 2500.0
+  },
+  "documents": [
+    "LLM_SOCIETY_README.md",
+    "comprehensive_2500_agent_analysis.md",
+    "COMPREHENSIVE_LLM_INTEGRATION_SUMMARY.md"
+  ],
+  "facts": [
+    "Average happiness 0.427 (range 0.333\u20130.558); latest 0.333.",
+    "Average energy 0.539; latest 0.382.",
+    "Total wealth grew to 1362669 (avg 1396951).",
+    "Anomalies flagged: energy_drop (2)"
+  ]
+}

@@ -1,0 +1,36 @@
+# Exclude virtual environments
+gcp_env/
+spatial_lab_env/
+spatial_lab_test_env/
+
+# Exclude Python cache files
+**/.pyc
+**/__pycache__/
+
+# Exclude Git directory
+.git/
+
+# Exclude VS Code settings
+.vscode/
+
+# Exclude test results and generated assets
+test_results/
+asset_test_results/
+generated_papers/
+massive_scale_output/
+research_results/
+central-platform/research_results/
+amien_research_output/
+analytics/
+
+# Exclude local databases
+*.db
+*.db-journal
+
+# Exclude specific large files if any
+*.log
+*.json
+*.jsonl
+*.md
+*.png
+*.obj

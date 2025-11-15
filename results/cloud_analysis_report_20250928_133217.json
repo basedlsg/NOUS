@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "project_id": "seven-l-prod",
+    "region": "us-central1",
+    "analysis_timestamp": "2025-09-28T13:32:17.551116",
+    "api_key_provided": "AIzaSyAqko3NqGS-GtXhzm8LeiZ3xUEyo_XIqLo"
+  },
+  "cloud_infrastructure": {
+    "gcs_buckets": {
+      "buckets": [
+        "7l-data",
+        "7l-jsonl",
+        "7l-models",
+        "7l-pipelines",
+        "7l-raw-worlds",
+        "7l-renders",
+        "cloud-ai-platform-e6b112cb-dc67-4853-87b6-0149fd2dffd8",
+        "run-sources-seven-l-prod-us-central1",
+        "seven-l-prod_cloudbuild"
+      ],
+      "contents": {},
+      "timestamp": "2025-09-28T13:28:37.748711"
+    },
+    "cloud_run_services": {
+      "services": [
+        {
+          "name": "gen-hunyuanworld",
+          "url": "https://gen-hunyuanworld-pmw5hj5h3a-uc.a.run.app"
+        },
+        {
+          "name": "processor",
+          "url": "https://processor-pmw5hj5h3a-uc.a.run.app"
+        },
+        {
+          "name": "render-multiview",
+          "url": "https://render-multiview-pmw5hj5h3a-uc.a.run.app"
+        }
+      ],
+      "logs": {},
+      "timestamp": "2025-09-28T13:29:13.481558"
+    },
+    "bigquery_datasets": {
+      "datasets": [],
+      "tables": {},
+      "timestamp": "2025-09-28T13:29:43.484714"
+    },
+    "pubsub_topics": {
+      "topics": [],
+      "subscriptions": [],
+      "timestamp": "2025-09-28T13:29:57.387639"
+    }
+  },
+  "component_data": {
+    "ai_society": {
+      "data": {},
+      "timestamp": "2025-09-28T13:31:07.368506"
+    },
+    "spatial_lab": {
+      "data": {},
+      "timestamp": "2025-09-28T13:32:17.550848"
+    }
+  },
+  "local_analysis": {
+    "highlights": [
+      "AI Society maintains mean happiness 0.427 with wealth reaching 1362669.",
+      "Spatial Lab achieved 61.3% accuracy across 1080 tasks.",
+      "Distributed warehouse strategy beats centralized by +11.4 efficiency points.",
+      "CloudVR produced 5 reports with success 100.0% analyzing 300 tests."
+    ]
+  },
+  "summary": {
+    "gcs_buckets_found": 9,
+    "cloud_run_services_found": 3,
+    "bigquery_datasets_found": 0,
+    "pubsub_topics_found": 0,
+    "local_components_analyzed": 4
+  }
+}

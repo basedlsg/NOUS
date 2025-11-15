@@ -1,0 +1,29 @@
+{
+  "id": "warehouse_coordination",
+  "label": "Warehouse / Factory Coordination",
+  "metrics": {
+    "scenarios": 120,
+    "strategy_summary": {
+      "centralized": {
+        "avg_efficiency": 0.5094603416379146,
+        "avg_collisions": 4.045833333333333,
+        "count": 24
+      },
+      "distributed": {
+        "avg_efficiency": 0.6232529939601628,
+        "avg_collisions": 3.4,
+        "count": 24
+      }
+    },
+    "overall_efficiency": 0.5663566677990387,
+    "overall_success_rate": 1.0
+  },
+  "documents": [
+    "results/warehouse_coordination_results_20250629_202324.json"
+  ],
+  "facts": [
+    "Scenarios evaluated: 120 across 2 strategies.",
+    "Average success rate: 100.0%",
+    "Distributed coordination improves efficiency over centralized by 11.4 percentage points."
+  ]
+}

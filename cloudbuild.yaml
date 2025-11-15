@@ -1,0 +1,17 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/spatial-experiment:latest', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/spatial-experiment:latest']
+  - name: 'gcr.io/google-cloud-sdk'
+    args:
+      - 'gcloud'
+      - 'run'
+      - 'deploy'
+      - 'spatial-experiment'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/spatial-experiment:latest'
+      - '--platform'
+      - 'managed'
+      - '--region'
+      - 'us-central1'

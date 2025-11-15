@@ -1,0 +1,2 @@
+BigQuery error in ls operation: Could not connect with BigQuery server due to:
+TimeoutError(60, 'Operation timed out')

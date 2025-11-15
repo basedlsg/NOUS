@@ -1,0 +1,14 @@
+PROJECT_ID: seven-l-prod
+BQ_DATASET: research_lake
+LOCATION: us-central1
+BUCKETS: "7l-data,7l-jsonl,7l-models,7l-pipelines"
+
+
+
+
+
+
+
+
+
+

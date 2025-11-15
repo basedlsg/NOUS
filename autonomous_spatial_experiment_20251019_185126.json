@@ -1,0 +1,342 @@
+{
+  "experiment_info": {
+    "num_trials": 10,
+    "start_time": "2025-10-19T18:51:26.007496",
+    "duration_seconds": 0.0021250247955322266,
+    "llm_provider": "simulation",
+    "llm_prioritization": "shape",
+    "prioritization_strength": 0.1,
+    "cloud_deployment": true
+  },
+  "statistics": {
+    "shape_priority_tasks": 6,
+    "metadata_priority_tasks": 4,
+    "shape_accuracy": 0.8333333333333334,
+    "metadata_accuracy": 1.0,
+    "overall_accuracy": 0.9,
+    "shape_prioritization_count": 5,
+    "metadata_prioritization_count": 4
+  },
+  "trials": [
+    {
+      "trial_number": 1,
+      "timestamp": "2025-10-19T18:51:26.006215",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_9\n- Shape: sphere\n- Color: green\n- Size: medium\n- Position: (5.236238959429008, 5.922720394821602, 2.8752399086160825)\n- Metadata: {'weight': 3.1988937447725037, 'material': 'metal', 'priority': 'high', 'category': 'heavy'}\n\n\nAvailable Objects:\n\nObject obj_5:\n- Shape: cube\n- Color: red\n- Size: medium\n- Position: (4.717018587508357, 0.8417958942435266, 0.02131232682902351)\n- Metadata: {'weight': 1.4204749966597385, 'material': 'glass', 'priority': 'high', 'category': 'urgent'}\n\nObject obj_4:\n- Shape: cylinder\n- Color: red\n- Size: large\n- Position: (7.027818383068971, 0.409578143717777, 0.905693889961965)\n- Metadata: {'weight': 2.925992859886666, 'material': 'glass', 'priority': 'medium', 'category': 'urgent'}\n\nObject obj_1:\n- Shape: cube\n- Color: red\n- Size: small\n- Position: (1.1492997469327226, 2.4002469526779793, 2.45478599337099)\n- Metadata: {'weight': 2.4033206508386376, 'material': 'wood', 'priority': 'low', 'category': 'urgent'}\n\nObject obj_8:\n- Shape: sphere\n- Color: blue\n- Size: small\n- Position: (8.66998670207501, 9.957129314804071, 2.2031870306989605)\n- Metadata: {'weight': 4.269544872540571, 'material': 'metal', 'priority': 'medium', 'category': 'standard'}\n\nObject obj_2:\n- Shape: cylinder\n- Color: red\n- Size: large\n- Position: (3.9455428508041166, 4.670128113311519, 1.7028520351872753)\n- Metadata: {'weight': 3.7993519258815693, 'material': 'metal', 'priority': 'high', 'category': 'urgent'}\n\n\nTask: Based on the reference object, identify which objects match its SHAPE. Prioritize shape similarity over other attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_8",
+          "obj_5",
+          "obj_4"
+        ],
+        "reasoning": "Selected objects based on shape similarity to sphere. Found 1 shape matches.",
+        "task_type": "shape_priority"
+      },
+      "analysis": {
+        "task_id": "task_0_shape_priority",
+        "task_type": "shape_priority",
+        "selected_objects": [
+          "obj_8",
+          "obj_5",
+          "obj_4"
+        ],
+        "shape_matches": 1,
+        "metadata_matches": 1,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on shape similarity to sphere. Found 1 shape matches.",
+        "reference_object": {
+          "id": "obj_9",
+          "shape": "sphere",
+          "priority": "high"
+        }
+      }
+    },
+    {
+      "trial_number": 2,
+      "timestamp": "2025-10-19T18:51:26.006550",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_5\n- Shape: pyramid\n- Color: green\n- Size: medium\n- Position: (3.5498884607011663, 0.07161075381521109, 0.47791095757681257)\n- Metadata: {'weight': 3.498608232452684, 'material': 'wood', 'priority': 'low', 'category': 'urgent'}\n\n\nAvailable Objects:\n\nObject obj_9:\n- Shape: pyramid\n- Color: green\n- Size: large\n- Position: (4.05054952352634, 4.367308240222121, 1.807617200866086)\n- Metadata: {'weight': 1.8960533869616831, 'material': 'wood', 'priority': 'high', 'category': 'standard'}\n\nObject obj_8:\n- Shape: cylinder\n- Color: yellow\n- Size: large\n- Position: (2.457393219932098, 9.813756716448545, 2.361145812978126)\n- Metadata: {'weight': 3.981405069777656, 'material': 'glass', 'priority': 'low', 'category': 'heavy'}\n\nObject obj_3:\n- Shape: cube\n- Color: red\n- Size: medium\n- Position: (2.9759850607635387, 4.845772927954304, 2.9815059748604407)\n- Metadata: {'weight': 3.525203763121665, 'material': 'plastic', 'priority': 'medium', 'category': 'standard'}\n\nObject obj_0:\n- Shape: sphere\n- Color: yellow\n- Size: large\n- Position: (0.23998468177605647, 6.817240491702041, 0.9008419377931882)\n- Metadata: {'weight': 2.148890981913626, 'material': 'plastic', 'priority': 'low', 'category': 'standard'}\n\nObject obj_6:\n- Shape: cylinder\n- Color: green\n- Size: small\n- Position: (4.168012855948557, 8.674647438601955, 2.645232103162681)\n- Metadata: {'weight': 1.530770689824492, 'material': 'metal', 'priority': 'medium', 'category': 'heavy'}\n\n\nTask: Based on the reference object, identify which objects match its SHAPE. Prioritize shape similarity over other attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_9",
+          "obj_8",
+          "obj_3"
+        ],
+        "reasoning": "Selected objects based on shape similarity to pyramid. Found 1 shape matches.",
+        "task_type": "shape_priority"
+      },
+      "analysis": {
+        "task_id": "task_1_shape_priority",
+        "task_type": "shape_priority",
+        "selected_objects": [
+          "obj_9",
+          "obj_8",
+          "obj_3"
+        ],
+        "shape_matches": 1,
+        "metadata_matches": 1,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on shape similarity to pyramid. Found 1 shape matches.",
+        "reference_object": {
+          "id": "obj_5",
+          "shape": "pyramid",
+          "priority": "low"
+        }
+      }
+    },
+    {
+      "trial_number": 3,
+      "timestamp": "2025-10-19T18:51:26.006656",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_7\n- Shape: sphere\n- Color: red\n- Size: medium\n- Position: (7.404447915411991, 4.172123162027646, 0.09927533740349404)\n- Metadata: {'weight': 2.8267578231824184, 'material': 'plastic', 'priority': 'low', 'category': 'fragile'}\n\n\nAvailable Objects:\n\nObject obj_2:\n- Shape: pyramid\n- Color: green\n- Size: medium\n- Position: (9.633177042426837, 1.5534224659693796, 2.9644522751414297)\n- Metadata: {'weight': 0.6064974017149699, 'material': 'glass', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_0:\n- Shape: sphere\n- Color: green\n- Size: large\n- Position: (0.6885578722737695, 9.0092938800674, 0.20191119810575509)\n- Metadata: {'weight': 1.1378369508894708, 'material': 'wood', 'priority': 'medium', 'category': 'heavy'}\n\nObject obj_7:\n- Shape: sphere\n- Color: red\n- Size: medium\n- Position: (7.404447915411991, 4.172123162027646, 0.09927533740349404)\n- Metadata: {'weight': 2.8267578231824184, 'material': 'plastic', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_5:\n- Shape: sphere\n- Color: yellow\n- Size: small\n- Position: (2.25258346539933, 8.504094780653435, 1.1806755177711161)\n- Metadata: {'weight': 4.336036338243632, 'material': 'wood', 'priority': 'low', 'category': 'urgent'}\n\nObject obj_8:\n- Shape: cube\n- Color: green\n- Size: medium\n- Position: (7.491723044988828, 7.806319236684201, 0.517673685322354)\n- Metadata: {'weight': 2.8086075161739803, 'material': 'plastic', 'priority': 'low', 'category': 'urgent'}\n\n\nTask: Based on the reference object, identify which objects match its SHAPE. Prioritize shape similarity over other attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_0",
+          "obj_7",
+          "obj_5"
+        ],
+        "reasoning": "Selected objects based on shape similarity to sphere. Found 3 shape matches.",
+        "task_type": "shape_priority"
+      },
+      "analysis": {
+        "task_id": "task_2_shape_priority",
+        "task_type": "shape_priority",
+        "selected_objects": [
+          "obj_0",
+          "obj_7",
+          "obj_5"
+        ],
+        "shape_matches": 3,
+        "metadata_matches": 2,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on shape similarity to sphere. Found 3 shape matches.",
+        "reference_object": {
+          "id": "obj_7",
+          "shape": "sphere",
+          "priority": "low"
+        }
+      }
+    },
+    {
+      "trial_number": 4,
+      "timestamp": "2025-10-19T18:51:26.006758",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_3\n- Shape: cylinder\n- Color: green\n- Size: small\n- Position: (7.6328420077643475, 4.152843455087034, 0.7824043940452844)\n- Metadata: {'weight': 2.971321947514196, 'material': 'metal', 'priority': 'high', 'category': 'heavy'}\n\n\nAvailable Objects:\n\nObject obj_0:\n- Shape: pyramid\n- Color: red\n- Size: medium\n- Position: (6.857301631022818, 8.169561889332922, 2.771469746231073)\n- Metadata: {'weight': 2.713786654075075, 'material': 'metal', 'priority': 'high', 'category': 'heavy'}\n\nObject obj_4:\n- Shape: cube\n- Color: green\n- Size: small\n- Position: (4.038649633851401, 7.134449813580048, 1.5213847120769761)\n- Metadata: {'weight': 4.8563007195051595, 'material': 'wood', 'priority': 'medium', 'category': 'urgent'}\n\nObject obj_3:\n- Shape: cylinder\n- Color: green\n- Size: small\n- Position: (7.6328420077643475, 4.152843455087034, 0.7824043940452844)\n- Metadata: {'weight': 2.971321947514196, 'material': 'metal', 'priority': 'high', 'category': 'heavy'}\n\nObject obj_5:\n- Shape: cylinder\n- Color: green\n- Size: small\n- Position: (2.252134702442856, 4.630021837582286, 0.40752441946037155)\n- Metadata: {'weight': 3.89253330344326, 'material': 'glass', 'priority': 'medium', 'category': 'urgent'}\n\nObject obj_2:\n- Shape: pyramid\n- Color: green\n- Size: medium\n- Position: (4.307648819584236, 9.926505771365148, 2.612297090487846)\n- Metadata: {'weight': 4.209241608401066, 'material': 'metal', 'priority': 'high', 'category': 'fragile'}\n\n\nTask: Based on the reference object, identify which objects match its METADATA (priority level). Prioritize metadata similarity over physical attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_0",
+          "obj_3",
+          "obj_2"
+        ],
+        "reasoning": "Selected objects based on metadata priority 'high'. Found 3 metadata matches.",
+        "task_type": "metadata_priority"
+      },
+      "analysis": {
+        "task_id": "task_3_metadata_priority",
+        "task_type": "metadata_priority",
+        "selected_objects": [
+          "obj_0",
+          "obj_3",
+          "obj_2"
+        ],
+        "shape_matches": 1,
+        "metadata_matches": 3,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on metadata priority 'high'. Found 3 metadata matches.",
+        "reference_object": {
+          "id": "obj_3",
+          "shape": "cylinder",
+          "priority": "high"
+        }
+      }
+    },
+    {
+      "trial_number": 5,
+      "timestamp": "2025-10-19T18:51:26.006855",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_6\n- Shape: cube\n- Color: green\n- Size: large\n- Position: (3.77463019702469, 3.6082822571999684, 2.0862561317237693)\n- Metadata: {'weight': 1.6545281278060797, 'material': 'plastic', 'priority': 'high', 'category': 'standard'}\n\n\nAvailable Objects:\n\nObject obj_5:\n- Shape: cube\n- Color: yellow\n- Size: medium\n- Position: (3.174503753183221, 4.851500953188804, 2.337142739947815)\n- Metadata: {'weight': 3.333391825550857, 'material': 'glass', 'priority': 'high', 'category': 'standard'}\n\nObject obj_4:\n- Shape: sphere\n- Color: red\n- Size: large\n- Position: (2.4691604371050566, 9.784430645558896, 0.7551167571991221)\n- Metadata: {'weight': 0.23752336575493468, 'material': 'metal', 'priority': 'high', 'category': 'urgent'}\n\nObject obj_3:\n- Shape: cube\n- Color: green\n- Size: large\n- Position: (2.061927392260033, 8.730909320972346, 2.8488119823100515)\n- Metadata: {'weight': 3.8238561226760885, 'material': 'glass', 'priority': 'low', 'category': 'standard'}\n\nObject obj_0:\n- Shape: sphere\n- Color: green\n- Size: large\n- Position: (2.115091463840878, 6.235769891583632, 1.9229931583554984)\n- Metadata: {'weight': 2.277185791060609, 'material': 'plastic', 'priority': 'high', 'category': 'urgent'}\n\nObject obj_8:\n- Shape: cube\n- Color: green\n- Size: small\n- Position: (5.322886112247898, 0.06294786894855409, 1.6694084710381842)\n- Metadata: {'weight': 4.4193906800212295, 'material': 'glass', 'priority': 'medium', 'category': 'standard'}\n\n\nTask: Based on the reference object, identify which objects match its SHAPE. Prioritize shape similarity over other attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_5",
+          "obj_3",
+          "obj_8"
+        ],
+        "reasoning": "Selected objects based on shape similarity to cube. Found 3 shape matches.",
+        "task_type": "shape_priority"
+      },
+      "analysis": {
+        "task_id": "task_4_shape_priority",
+        "task_type": "shape_priority",
+        "selected_objects": [
+          "obj_5",
+          "obj_3",
+          "obj_8"
+        ],
+        "shape_matches": 3,
+        "metadata_matches": 1,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on shape similarity to cube. Found 3 shape matches.",
+        "reference_object": {
+          "id": "obj_6",
+          "shape": "cube",
+          "priority": "high"
+        }
+      }
+    },
+    {
+      "trial_number": 6,
+      "timestamp": "2025-10-19T18:51:26.007017",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_1\n- Shape: cylinder\n- Color: green\n- Size: large\n- Position: (6.091923559182541, 4.071453589029162, 0.5542000991404181)\n- Metadata: {'weight': 4.8707151075572765, 'material': 'plastic', 'priority': 'low', 'category': 'fragile'}\n\n\nAvailable Objects:\n\nObject obj_0:\n- Shape: cylinder\n- Color: green\n- Size: large\n- Position: (1.2748336514435699, 4.644129778614516, 0.28236917154750774)\n- Metadata: {'weight': 4.987929355276375, 'material': 'metal', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_3:\n- Shape: sphere\n- Color: red\n- Size: medium\n- Position: (3.5174155938184573, 5.832069385865423, 2.423062947180682)\n- Metadata: {'weight': 4.905758140575518, 'material': 'glass', 'priority': 'high', 'category': 'urgent'}\n\nObject obj_9:\n- Shape: cube\n- Color: red\n- Size: medium\n- Position: (0.572181503950927, 0.6851492641470891, 2.003998115091008)\n- Metadata: {'weight': 1.7157758490589314, 'material': 'wood', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_7:\n- Shape: pyramid\n- Color: blue\n- Size: medium\n- Position: (5.817567034099426, 7.04503145057531, 1.4990962085404789)\n- Metadata: {'weight': 0.6045153312349848, 'material': 'metal', 'priority': 'high', 'category': 'heavy'}\n\nObject obj_6:\n- Shape: sphere\n- Color: yellow\n- Size: large\n- Position: (7.472859952192338, 0.8992803082159107, 0.377071547734672)\n- Metadata: {'weight': 2.9240248472393313, 'material': 'glass', 'priority': 'medium', 'category': 'heavy'}\n\n\nTask: Based on the reference object, identify which objects match its SHAPE. Prioritize shape similarity over other attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_0",
+          "obj_3",
+          "obj_9"
+        ],
+        "reasoning": "Selected objects based on shape similarity to cylinder. Found 1 shape matches.",
+        "task_type": "shape_priority"
+      },
+      "analysis": {
+        "task_id": "task_5_shape_priority",
+        "task_type": "shape_priority",
+        "selected_objects": [
+          "obj_0",
+          "obj_3",
+          "obj_9"
+        ],
+        "shape_matches": 1,
+        "metadata_matches": 2,
+        "correct_prioritization": false,
+        "reasoning": "Selected objects based on shape similarity to cylinder. Found 1 shape matches.",
+        "reference_object": {
+          "id": "obj_1",
+          "shape": "cylinder",
+          "priority": "low"
+        }
+      }
+    },
+    {
+      "trial_number": 7,
+      "timestamp": "2025-10-19T18:51:26.007112",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_0\n- Shape: cylinder\n- Color: red\n- Size: medium\n- Position: (3.808529715584734, 1.024316644646126, 1.451620951042668)\n- Metadata: {'weight': 1.3665459076758546, 'material': 'metal', 'priority': 'medium', 'category': 'heavy'}\n\n\nAvailable Objects:\n\nObject obj_8:\n- Shape: pyramid\n- Color: blue\n- Size: medium\n- Position: (2.4494377577443305, 9.606818883188172, 0.8816226454073431)\n- Metadata: {'weight': 2.7029906371478143, 'material': 'glass', 'priority': 'low', 'category': 'standard'}\n\nObject obj_0:\n- Shape: cylinder\n- Color: red\n- Size: medium\n- Position: (3.808529715584734, 1.024316644646126, 1.451620951042668)\n- Metadata: {'weight': 1.3665459076758546, 'material': 'metal', 'priority': 'medium', 'category': 'heavy'}\n\nObject obj_4:\n- Shape: sphere\n- Color: green\n- Size: small\n- Position: (2.447923892363786, 3.0704717833802677, 0.05636854151083448)\n- Metadata: {'weight': 0.6440607801528517, 'material': 'metal', 'priority': 'high', 'category': 'heavy'}\n\nObject obj_5:\n- Shape: cylinder\n- Color: blue\n- Size: large\n- Position: (8.246139679553167, 8.007732046986279, 0.22412805683071768)\n- Metadata: {'weight': 3.0642429672865257, 'material': 'wood', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_6:\n- Shape: cylinder\n- Color: yellow\n- Size: medium\n- Position: (6.85502697107353, 7.069703543845093, 0.1825584358385003)\n- Metadata: {'weight': 0.9814095731122837, 'material': 'glass', 'priority': 'high', 'category': 'urgent'}\n\n\nTask: Based on the reference object, identify which objects match its SHAPE. Prioritize shape similarity over other attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_0",
+          "obj_5",
+          "obj_6"
+        ],
+        "reasoning": "Selected objects based on shape similarity to cylinder. Found 3 shape matches.",
+        "task_type": "shape_priority"
+      },
+      "analysis": {
+        "task_id": "task_6_shape_priority",
+        "task_type": "shape_priority",
+        "selected_objects": [
+          "obj_0",
+          "obj_5",
+          "obj_6"
+        ],
+        "shape_matches": 3,
+        "metadata_matches": 1,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on shape similarity to cylinder. Found 3 shape matches.",
+        "reference_object": {
+          "id": "obj_0",
+          "shape": "cylinder",
+          "priority": "medium"
+        }
+      }
+    },
+    {
+      "trial_number": 8,
+      "timestamp": "2025-10-19T18:51:26.007211",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_5\n- Shape: pyramid\n- Color: blue\n- Size: small\n- Position: (9.703540753328715, 7.611882655780664, 2.5239123959417054)\n- Metadata: {'weight': 4.440991364214389, 'material': 'plastic', 'priority': 'low', 'category': 'standard'}\n\n\nAvailable Objects:\n\nObject obj_2:\n- Shape: pyramid\n- Color: red\n- Size: medium\n- Position: (2.9990015885878893, 2.608118165423372, 2.2673976111173504)\n- Metadata: {'weight': 4.2508867863253865, 'material': 'glass', 'priority': 'medium', 'category': 'fragile'}\n\nObject obj_8:\n- Shape: cube\n- Color: red\n- Size: large\n- Position: (4.384593135467499, 8.113232894909824, 0.32077603819138134)\n- Metadata: {'weight': 0.12045970098430503, 'material': 'wood', 'priority': 'low', 'category': 'heavy'}\n\nObject obj_4:\n- Shape: cylinder\n- Color: yellow\n- Size: large\n- Position: (6.026872946096048, 8.119893124757398, 2.7947825912175035)\n- Metadata: {'weight': 2.9343332877461585, 'material': 'wood', 'priority': 'medium', 'category': 'fragile'}\n\nObject obj_3:\n- Shape: cylinder\n- Color: green\n- Size: medium\n- Position: (4.018067839243441, 1.9616034507316649, 1.5516521857411447)\n- Metadata: {'weight': 2.981391700065406, 'material': 'metal', 'priority': 'medium', 'category': 'heavy'}\n\nObject obj_9:\n- Shape: cube\n- Color: blue\n- Size: large\n- Position: (1.4631184020794286, 1.739362771474745, 0.7353616892699629)\n- Metadata: {'weight': 1.4271167490496153, 'material': 'glass', 'priority': 'medium', 'category': 'standard'}\n\n\nTask: Based on the reference object, identify which objects match its METADATA (priority level). Prioritize metadata similarity over physical attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_8",
+          "obj_2",
+          "obj_4"
+        ],
+        "reasoning": "Selected objects based on metadata priority 'low'. Found 1 metadata matches.",
+        "task_type": "metadata_priority"
+      },
+      "analysis": {
+        "task_id": "task_7_metadata_priority",
+        "task_type": "metadata_priority",
+        "selected_objects": [
+          "obj_8",
+          "obj_2",
+          "obj_4"
+        ],
+        "shape_matches": 1,
+        "metadata_matches": 1,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on metadata priority 'low'. Found 1 metadata matches.",
+        "reference_object": {
+          "id": "obj_5",
+          "shape": "pyramid",
+          "priority": "low"
+        }
+      }
+    },
+    {
+      "trial_number": 9,
+      "timestamp": "2025-10-19T18:51:26.007306",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_5\n- Shape: pyramid\n- Color: green\n- Size: small\n- Position: (0.15343131709673719, 6.14250494364918, 2.6561043404974023)\n- Metadata: {'weight': 0.8191075122992646, 'material': 'metal', 'priority': 'high', 'category': 'urgent'}\n\n\nAvailable Objects:\n\nObject obj_6:\n- Shape: sphere\n- Color: blue\n- Size: medium\n- Position: (3.198783698034412, 4.97765000081235, 0.3891352331540361)\n- Metadata: {'weight': 1.2156488861190275, 'material': 'wood', 'priority': 'high', 'category': 'fragile'}\n\nObject obj_3:\n- Shape: cylinder\n- Color: green\n- Size: large\n- Position: (0.07835217895893365, 8.873897543164865, 1.851757832208197)\n- Metadata: {'weight': 1.0223010917039843, 'material': 'plastic', 'priority': 'low', 'category': 'urgent'}\n\nObject obj_9:\n- Shape: cylinder\n- Color: yellow\n- Size: small\n- Position: (2.632895023938253, 6.938331889541023, 2.2208401361552603)\n- Metadata: {'weight': 4.41515304684355, 'material': 'glass', 'priority': 'low', 'category': 'heavy'}\n\nObject obj_8:\n- Shape: cylinder\n- Color: yellow\n- Size: large\n- Position: (5.188419873186273, 1.9015309401140879, 2.966746298545682)\n- Metadata: {'weight': 4.275607628338664, 'material': 'wood', 'priority': 'medium', 'category': 'standard'}\n\nObject obj_7:\n- Shape: pyramid\n- Color: blue\n- Size: small\n- Position: (0.22197776653635648, 3.930938673496037, 2.6202515875472354)\n- Metadata: {'weight': 1.2101819718299878, 'material': 'wood', 'priority': 'high', 'category': 'urgent'}\n\n\nTask: Based on the reference object, identify which objects match its METADATA (priority level). Prioritize metadata similarity over physical attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_6",
+          "obj_7",
+          "obj_3"
+        ],
+        "reasoning": "Selected objects based on metadata priority 'high'. Found 2 metadata matches.",
+        "task_type": "metadata_priority"
+      },
+      "analysis": {
+        "task_id": "task_8_metadata_priority",
+        "task_type": "metadata_priority",
+        "selected_objects": [
+          "obj_6",
+          "obj_7",
+          "obj_3"
+        ],
+        "shape_matches": 1,
+        "metadata_matches": 2,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on metadata priority 'high'. Found 2 metadata matches.",
+        "reference_object": {
+          "id": "obj_5",
+          "shape": "pyramid",
+          "priority": "high"
+        }
+      }
+    },
+    {
+      "trial_number": 10,
+      "timestamp": "2025-10-19T18:51:26.007399",
+      "prompt": "You are a warehouse robot making spatial reasoning decisions.\n\n\nReference Object:\n- ID: obj_8\n- Shape: sphere\n- Color: red\n- Size: medium\n- Position: (5.806161336777523, 7.3885428405092854, 1.4556334520909577)\n- Metadata: {'weight': 4.212248782982406, 'material': 'metal', 'priority': 'medium', 'category': 'heavy'}\n\n\nAvailable Objects:\n\nObject obj_9:\n- Shape: pyramid\n- Color: red\n- Size: medium\n- Position: (9.479274337606189, 7.885089685446229, 2.1146530585656893)\n- Metadata: {'weight': 4.596025303089612, 'material': 'glass', 'priority': 'low', 'category': 'heavy'}\n\nObject obj_6:\n- Shape: cylinder\n- Color: red\n- Size: small\n- Position: (8.06970058678279, 2.1685595467883276, 2.036255941633115)\n- Metadata: {'weight': 1.3511491472932171, 'material': 'metal', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_3:\n- Shape: pyramid\n- Color: green\n- Size: medium\n- Position: (9.829756236633328, 8.420603055722859, 1.2741264719704604)\n- Metadata: {'weight': 4.187385026006164, 'material': 'glass', 'priority': 'medium', 'category': 'urgent'}\n\nObject obj_4:\n- Shape: sphere\n- Color: red\n- Size: medium\n- Position: (8.811089356306702, 7.737691685719544, 2.2910675641218807)\n- Metadata: {'weight': 0.45569393090201027, 'material': 'plastic', 'priority': 'low', 'category': 'fragile'}\n\nObject obj_0:\n- Shape: cube\n- Color: red\n- Size: small\n- Position: (0.7128238333097681, 4.490682474438429, 0.41304985833134933)\n- Metadata: {'weight': 0.5373120981318692, 'material': 'glass', 'priority': 'low', 'category': 'standard'}\n\n\nTask: Based on the reference object, identify which objects match its METADATA (priority level). Prioritize metadata similarity over physical attributes.\n\nWhich objects would you select? Respond with a JSON array of object IDs, ordered by your priority.\nExample: [\"obj_1\", \"obj_3\", \"obj_7\"]\n\nReasoning: Briefly explain your selection criteria.",
+      "response": {
+        "selected_objects": [
+          "obj_3",
+          "obj_9",
+          "obj_6"
+        ],
+        "reasoning": "Selected objects based on metadata priority 'medium'. Found 1 metadata matches.",
+        "task_type": "metadata_priority"
+      },
+      "analysis": {
+        "task_id": "task_9_metadata_priority",
+        "task_type": "metadata_priority",
+        "selected_objects": [
+          "obj_3",
+          "obj_9",
+          "obj_6"
+        ],
+        "shape_matches": 0,
+        "metadata_matches": 1,
+        "correct_prioritization": true,
+        "reasoning": "Selected objects based on metadata priority 'medium'. Found 1 metadata matches.",
+        "reference_object": {
+          "id": "obj_8",
+          "shape": "sphere",
+          "priority": "medium"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "project_id": "seven-l-prod",
+    "analysis_timestamp": "2025-09-28T20:19:26.500561",
+    "api_key_used": "AIzaSyAqko3NqGS-GtXhzm8LeiZ3xUEyo_XIqLo",
+    "method": "authenticated_curl_and_gcloud"
+  },
+  "cloud_infrastructure": {
+    "gcs_buckets": {
+      "error": "Failed to get access token",
+      "status": "error"
+    },
+    "bigquery_datasets": {
+      "error": "Failed to get access token",
+      "status": "error"
+    },
+    "cloud_run_services": {
+      "error": "Failed to list Cloud Run services",
+      "timestamp": "2025-09-28T20:19:26.443047",
+      "status": "error"
+    }
+  },
+  "experimental_data": {
+    "error": "Failed to get access token",
+    "status": "error"
+  },
+  "local_analysis": {
+    "highlights": [
+      "AI Society maintains mean happiness 0.427 with wealth reaching 1362669.",
+      "Spatial Lab achieved 61.3% accuracy across 1080 tasks.",
+      "Distributed warehouse strategy beats centralized by +11.4 efficiency points.",
+      "CloudVR produced 5 reports with success 100.0% analyzing 300 tests."
+    ]
+  },
+  "summary": {
+    "gcs_buckets_found": 0,
+    "bigquery_datasets_found": 0,
+    "cloud_run_services_found": 0,
+    "experimental_data_sources": 0,
+    "local_components_analyzed": 4
+  }
+}

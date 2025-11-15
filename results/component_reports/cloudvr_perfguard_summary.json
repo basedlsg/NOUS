@@ -1,0 +1,28 @@
+{
+  "id": "cloudvr_perfguard",
+  "label": "CloudVR PerfGuard Research",
+  "metrics": {
+    "reports": 5,
+    "success_rate": 1.0,
+    "total_data_points": 300,
+    "total_cost": 0.12,
+    "avg_research_quality": 69.6,
+    "avg_papers_per_report": 1.2,
+    "apps_coverage": {
+      "MetaverseClient": 2,
+      "VRExplorer": 2,
+      "VRTraining": 2,
+      "SpatialWorkshop": 2
+    }
+  },
+  "documents": [
+    "FINAL_SYSTEM_SUMMARY.md",
+    "REAL_RESEARCH_ACHIEVEMENT_SUMMARY.md"
+  ],
+  "facts": [
+    "Research reports generated: 5 (success rate 100.0%).",
+    "Total VR test runs analyzed: 300 across 4 applications.",
+    "Average research quality score: 69.6",
+    "Total AI cost tracked: $0.12."
+  ]
+}

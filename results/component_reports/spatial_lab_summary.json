@@ -1,0 +1,47 @@
+{
+  "id": "spatial_lab",
+  "label": "Spatial AI Lab",
+  "metrics": {
+    "tasks": 1080,
+    "accuracy": 0.6129629629629629,
+    "avg_latency_ms": 5179.912497599919,
+    "avg_cost_estimate": 6.335532407407407e-05,
+    "providers": {
+      "gemini": 540,
+      "groq": 540
+    },
+    "category_breakdown": {
+      "distance_estimation": {
+        "total": 540,
+        "accuracy": 0.22592592592592592
+      },
+      "object_placement": {
+        "total": 540,
+        "accuracy": 1.0
+      }
+    },
+    "difficulty_breakdown": {
+      "1": {
+        "total": 360,
+        "accuracy": 0.6
+      },
+      "2": {
+        "total": 360,
+        "accuracy": 0.6222222222222222
+      },
+      "3": {
+        "total": 360,
+        "accuracy": 0.6166666666666667
+      }
+    }
+  },
+  "documents": [
+    "SPATIAL_LAB_README.md",
+    "SPATIAL_AI_LAB_IMPLEMENTATION_SUMMARY.md"
+  ],
+  "facts": [
+    "Total tasks evaluated: 1080 across 2 categories.",
+    "Overall accuracy: 61.3%",
+    "Average latency: 5179.9 ms"
+  ]
+}
